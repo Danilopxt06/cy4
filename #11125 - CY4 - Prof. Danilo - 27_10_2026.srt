@@ -1,0 +1,1715 @@
+1
+00:00:02,820 --> 00:00:05,960
+Pronto, beleza, temos aqui as duas pastas que a gente criou,
+
+2
+00:00:06,080 --> 00:00:09,020
+beleza, tudo bem, tudo certo. E aí a gente vai ter que fazer o
+
+3
+00:00:09,021 --> 00:00:12,960
+seguinte, você vai vir aqui no seu terminal e aí você vai dar um
+
+4
+00:00:12,961 --> 00:00:14,720
+cd back-end.
+
+5
+00:00:21,283 --> 00:00:23,423
+Beleza, o que é que a gente vai fazer nesse back-end?
+
+6
+00:00:23,523 --> 00:00:28,163
+A gente já deu NPM init e agora a gente vai instalar
+
+7
+00:00:28,164 --> 00:00:31,803
+aquele tal de Cores. Você lembra que era ele que ajudava a gente a
+
+8
+00:00:31,804 --> 00:00:34,205
+ter, para a parte visual,
+
+9
+00:00:34,345 --> 00:00:37,785
+a conexão com a parte visual. Então,
+
+10
+00:00:37,865 --> 00:00:41,445
+beleza. Então, no terminal, a gente vai colocar assim.
+
+11
+00:00:42,465 --> 00:00:47,105
+npm install express npm
+
+12
+00:00:47,106 --> 00:00:51,768
+install EXPRESS COURSE
+
+13
+00:01:16,221 --> 00:01:19,561
+Boa tarde. Boa tarde. Boa tarde.
+
+14
+00:01:20,743 --> 00:01:23,663
+Pronto? Beleza!
+
+15
+00:01:24,243 --> 00:01:27,823
+Depois de instalar o Cores, a gente vai ter que sair da pasta do
+
+16
+00:01:27,824 --> 00:01:32,663
+back-end e ir pra do front-end fazer a instalação e a criação do Create,
+
+17
+00:01:32,883 --> 00:01:36,223
+certo? Então, você vai dar cd espaço
+
+18
+00:01:44,656 --> 00:01:49,276
+E essa estrutura, ela já vai ser para maiores
+
+19
+00:01:49,277 --> 00:01:53,579
+dos seus projetos mais simples, você vai sempre separar o back and O que
+
+20
+00:01:53,580 --> 00:02:04,939
+a gente vai dar de comando
+
+21
+00:02:04,940 --> 00:02:07,699
+do front-end tem que estar na pasta do front-end?
+
+22
+00:02:08,342 --> 00:02:11,342
+cd prompt-language
+
+23
+00:02:17,102 --> 00:02:23,522
+E aí o comando que a gente vai dar vai ser esse aqui npx
+
+24
+00:02:23,523 --> 00:02:24,282
+create
+
+25
+00:02:29,224 --> 00:02:31,624
+NBX, deixa eu dar uma séria nessa aqui,
+
+26
+00:02:33,164 --> 00:02:36,404
+NBX CREATE,
+
+27
+00:02:40,987 --> 00:02:46,807
+Traço react, traço
+
+28
+00:02:46,808 --> 00:02:51,927
+app, espaço
+
+29
+00:02:51,928 --> 00:02:53,767
+front-end.
+
+30
+00:03:04,230 --> 00:03:06,710
+E-he-he-hem! E-he-he-hem!
+
+31
+00:04:01,550 --> 00:04:04,090
+O senhor já foi? Tomara.
+
+32
+00:04:05,530 --> 00:04:07,730
+Falta um pouquinho. Beleza.
+
+33
+00:04:09,310 --> 00:04:13,550
+Enquanto isso, a gente já pode vir aqui dando uma olhada.
+
+34
+00:04:13,630 --> 00:04:16,650
+Tá vendo que tá instalando algumas coisas? Aqui já apareceu até,
+
+35
+00:04:17,503 --> 00:04:22,103
+Ele meio que criou uma pasta de front-end dentro da outra,
+
+36
+00:04:23,023 --> 00:04:24,723
+mas a gente vira o temporal não.
+
+37
+00:04:42,866 --> 00:04:46,446
+Enquanto isso, bora adiantando a vida. Clica ali no server.js,
+
+38
+00:04:47,266 --> 00:04:50,888
+que a gente vai fazer, As rotas do nosso servidor.
+
+39
+00:04:51,488 --> 00:04:56,188
+Como eu estava comentando com você, a gente vai criar um,
+
+40
+00:04:57,548 --> 00:04:59,808
+uma página CRUD,
+
+41
+00:05:00,128 --> 00:05:02,408
+certo? Vamos criar um sistema de CRUD.
+
+42
+00:05:03,028 --> 00:05:06,291
+Serve para muitas coisas. Sistema de mercado,
+
+43
+00:05:06,611 --> 00:05:09,991
+farmácia, escola, tudo que você consegue registrar,
+
+44
+00:05:10,171 --> 00:05:13,551
+remover, atualizar é um sistema muito versátil.
+
+45
+00:05:13,631 --> 00:05:16,691
+E a maioria dos sistemas comerciais, eles são vendidos assim,
+
+46
+00:05:17,071 --> 00:05:19,411
+certo? Então,
+
+47
+00:05:20,011 --> 00:05:24,574
+O esqueleto, O esqueleto do sistema que
+
+48
+00:05:24,575 --> 00:05:27,514
+você vai fazer vai ser sempre esse, com uma rota de criar,
+
+49
+00:05:27,794 --> 00:05:30,134
+remover, buscar, tal, tal, tal.
+
+50
+00:05:30,574 --> 00:05:32,894
+Então sempre vai ter essas coisinhas aí,
+
+51
+00:05:32,954 --> 00:05:36,874
+que a gente já viu, certo? Para sistemas mais específicos,
+
+52
+00:05:36,896 --> 00:05:39,656
+você vai usar aquelas outras coisas que a gente já conversou,
+
+53
+00:05:39,796 --> 00:05:41,936
+que foi o que? É os middlewares,
+
+54
+00:05:41,996 --> 00:05:46,516
+o JWT, que é pra autenticar quando eu tiver senha,
+
+55
+00:05:46,636 --> 00:05:48,996
+usuários diferentes e tudo mais, certo?
+
+56
+00:05:49,496 --> 00:05:52,536
+Então, aqui dentro desse nosso server JS,
+
+57
+00:05:52,939 --> 00:05:56,619
+a gente já vai chamar os dois carinhas que a gente vai usar.
+
+58
+00:05:57,399 --> 00:06:03,139
+const express igual require,
+
+59
+00:06:04,959 --> 00:06:11,272
+abre parênteses, Express
+
+60
+00:06:11,273 --> 00:06:19,452
+in Course.
+
+61
+00:06:30,315 --> 00:06:32,734
+O tamanho tá bom, Heitor, da fonte?
+
+62
+00:06:33,475 --> 00:06:33,554
+Tá.
+
+63
+00:08:07,091 --> 00:08:11,011
+As duas ferramentas que a gente vai usar,
+
+64
+00:08:11,651 --> 00:08:15,331
+e aí a gente vai utilizar elas aqui né,
+
+65
+00:08:15,771 --> 00:08:19,203
+então, é, É app,
+
+66
+00:08:19,204 --> 00:08:23,823
+calma aí, tem que criar o app, né? const app
+
+67
+00:08:23,824 --> 00:08:28,823
+recebe-express.tv,
+
+68
+00:08:30,863 --> 00:08:33,243
+certo? Depois.
+
+69
+00:08:37,726 --> 00:08:40,006
+Abre parênteses,
+
+70
+00:08:41,046 --> 00:08:43,546
+course, abre parênteses,
+
+71
+00:08:43,786 --> 00:08:46,806
+continue your work.
+
+72
+00:08:54,589 --> 00:08:59,589
+App.usexpress.json
+
+73
+00:09:03,049 --> 00:09:05,429
+Tudo isso aqui eu já expliquei, que é a questão da parênteses.
+
+74
+00:09:05,451 --> 00:09:09,031
+A comunicação, né? A gente criou uma aplicação usando o Express,
+
+75
+00:09:09,371 --> 00:09:12,431
+que é um esqueleto de como criar uma aplicação,
+
+76
+00:09:12,611 --> 00:09:17,691
+um servidor. Depois a gente botou pra aplicação usar o
+
+77
+00:09:17,692 --> 00:09:19,951
+CORS, que é tipo um esqueleto de código,
+
+78
+00:09:20,231 --> 00:09:23,874
+ele meio que Ele tá aprendendo como que ele vai se comunicar com o
+
+79
+00:09:23,875 --> 00:09:28,514
+front-end, e por último a gente coloca para o app se
+
+80
+00:09:28,515 --> 00:09:30,714
+comunicar com o express usando o json,
+
+81
+00:09:30,834 --> 00:09:34,494
+certo? Pronto. Agora,
+
+82
+00:09:34,495 --> 00:09:40,577
+abaixo, a gente vai fazer as rotas e depois a depois a gente
+
+83
+00:09:40,578 --> 00:09:43,257
+vai para o oriente,
+
+84
+00:09:43,437 --> 00:09:45,637
+inclusive eu acho que já até instalou aqui,
+
+85
+00:09:45,697 --> 00:09:48,597
+não foi? veja aí no seu,
+
+86
+00:09:48,697 --> 00:09:54,079
+eu acho que o meu foi depois que o seu, né? Hum?
+
+87
+00:09:54,399 --> 00:09:57,799
+Ainda tá instalando? É,
+
+88
+00:09:57,939 --> 00:10:02,559
+o meu, deixa eu ver, É, o meu foi. Mas
+
+89
+00:10:02,560 --> 00:10:04,699
+aí depois você vê. Ok?
+
+90
+00:10:05,179 --> 00:10:08,399
+E aí, o que que acontece? Para continuar aqui no sério,
+
+91
+00:10:09,672 --> 00:10:14,152
+A gente precisa criar essas rotas,
+
+92
+00:10:14,272 --> 00:10:17,432
+né, então a primeira rota que a gente vai fazer, aliás,
+
+93
+00:10:17,692 --> 00:10:22,732
+vamos criar os produtos e
+
+94
+00:10:22,733 --> 00:10:25,252
+o ID, certo? Então,
+
+95
+00:10:25,492 --> 00:10:25,632
+let's go!
+
+96
+00:10:29,965 --> 00:10:34,505
+E a gente também
+
+97
+00:10:34,506 --> 00:10:38,065
+vai inicializar os ID's né, ID atual,
+
+98
+00:10:39,985 --> 00:10:43,868
+vai receber um, que o ID atual atual é o primeiro livro.
+
+99
+00:10:44,488 --> 00:10:47,428
+Aí depois a gente vai aumentando, né? Colocou um produto,
+
+100
+00:10:47,648 --> 00:10:50,608
+aumentou o ID. Colocou mais um, aumentou. Certo?
+
+101
+00:10:53,348 --> 00:10:56,728
+Ok. Agora sim que a gente vai começar a criar as rotas.
+
+102
+00:10:56,848 --> 00:10:59,790
+Então a gente vai colocar app.get,
+
+103
+00:11:00,270 --> 00:11:01,850
+abre parêntese,
+
+104
+00:11:07,610 --> 00:11:10,130
+aspas, barra,
+
+105
+00:11:10,790 --> 00:11:15,153
+produtos, vírgula,
+
+106
+00:11:16,513 --> 00:11:18,913
+abre parênteses,
+
+107
+00:11:19,173 --> 00:11:21,213
+rec, vírgula,
+
+108
+00:11:21,333 --> 00:11:21,813
+res,
+
+109
+00:11:26,653 --> 00:11:29,593
+arrow function, certo?
+
+110
+00:11:29,836 --> 00:11:34,316
+Abre chaves, deixa eu ver se tem chaves, tem. E aí a gente vai
+
+111
+00:11:34,317 --> 00:11:38,936
+colocar res.json
+
+112
+00:11:38,937 --> 00:11:44,476
+abre parênteses produtos
+
+113
+00:11:46,698 --> 00:11:49,298
+Por enquanto, essa nossa página aqui,
+
+114
+00:11:49,378 --> 00:11:52,338
+ela não vai ter busca por ideia nem nada,
+
+115
+00:11:52,758 --> 00:11:55,778
+isso daí a gente já fez, né? A única diferença que a gente tá
+
+116
+00:11:55,779 --> 00:12:00,118
+fazendo agora é pegar as coisas que a gente já aprendeu e tá exercitando
+
+117
+00:12:00,119 --> 00:12:03,641
+com o front-end, certo? Porque a gente já sabe como fazer rota,
+
+118
+00:12:03,701 --> 00:12:08,081
+já sabe como mostrar produto,
+
+119
+00:12:08,241 --> 00:12:10,601
+como buscar por ideia e tudo mais, e enfim.
+
+120
+00:12:12,881 --> 00:12:16,701
+Então, depois disso, ponto em vir. A rota GET é sempre a mais facinho
+
+121
+00:12:16,702 --> 00:12:19,144
+de fazer. É a mais de boa. Certo?
+
+122
+00:12:23,244 --> 00:12:25,944
+Ok? Terminou? Perfeito.
+
+123
+00:12:26,384 --> 00:12:28,484
+Agora a gente vai fazer, Ah, tem!
+
+124
+00:12:29,244 --> 00:12:31,944
+Tinha me enganado. Tem mesmo, a de buscar por ID.
+
+125
+00:12:32,244 --> 00:12:35,476
+Achei que essa daqui era a mais simples. Aí tem POST,
+
+126
+00:12:35,696 --> 00:12:38,236
+PUT e DELETE, bora lá!
+
+127
+00:12:39,316 --> 00:12:44,096
+ap.get,
+
+128
+00:12:44,676 --> 00:12:51,939
+abre parênteses, aspas Barra
+
+129
+00:12:51,940 --> 00:12:57,779
+produtos, barra,
+
+130
+00:12:57,780 --> 00:12:59,839
+dois pontos e D.
+
+131
+00:13:04,659 --> 00:13:06,772
+Certo? Depois,
+
+132
+00:13:07,212 --> 00:13:09,292
+REC e RES, Error Function,
+
+133
+00:13:09,392 --> 00:13:10,352
+do mesmo jeitinho.
+
+134
+00:13:29,034 --> 00:13:31,894
+O que a gente vai fazer em primeiro lugar aqui?
+
+135
+00:13:32,654 --> 00:13:37,514
+A gente vai colocar bem assim const é produto
+
+136
+00:13:37,515 --> 00:13:40,537
+ou seja Ou seja, o produto,
+
+137
+00:13:41,097 --> 00:13:45,757
+ele é uma
+
+138
+00:13:45,758 --> 00:13:49,697
+parte da lista de produtos,
+
+139
+00:13:49,897 --> 00:13:54,097
+certo? Então, produto igual a produtos.
+
+140
+00:13:54,220 --> 00:13:57,540
+que é a lista, ponto find,
+
+141
+00:14:00,040 --> 00:14:02,560
+abre parêntese,
+
+142
+00:14:04,780 --> 00:14:08,700
+p, arrow, a flechinha,
+
+143
+00:14:09,800 --> 00:14:13,582
+p ponto find, .id, igual,
+
+144
+00:14:13,702 --> 00:14:16,902
+igual, rec,
+
+145
+00:14:17,762 --> 00:14:22,902
+ponto, params,
+
+146
+00:14:23,662 --> 00:14:28,165
+ponto id. A gente resta
+
+147
+00:14:28,166 --> 00:14:29,025
+equiparar com a fonte.
+
+148
+00:14:49,438 --> 00:14:52,738
+Pronto. Ok. Então,
+
+149
+00:14:53,278 --> 00:14:56,838
+o que a gente fez agora? A gente disse que o produto que a
+
+150
+00:14:56,839 --> 00:14:59,521
+gente vai usar no Busca, Ou seja,
+
+151
+00:14:59,661 --> 00:15:02,301
+o produto que a gente vai achar dentro da lista de produtos,
+
+152
+00:15:02,681 --> 00:15:07,321
+ele vai ser o produto
+
+153
+00:15:07,322 --> 00:15:10,221
+que a gente vai buscar o ID dele e ver se o que a
+
+154
+00:15:10,222 --> 00:15:14,793
+gente trouxe na requisição é igual ao ID que tem dentro da dentro da
+
+155
+00:15:14,794 --> 00:15:16,913
+lista, certo? Esse REC,
+
+156
+00:15:16,973 --> 00:15:20,613
+PARAMS, ID é simplesmente o ID que a gente está buscando,
+
+157
+00:15:20,673 --> 00:15:23,693
+certo? Então, se eu coloquei ID2,
+
+158
+00:15:24,133 --> 00:15:28,253
+ID3, ID4, tudo isso vai estar bem,
+
+159
+00:15:28,713 --> 00:15:32,356
+vai ser comparado com esse ID. que é o que tem dentro da lista.
+
+160
+00:15:32,916 --> 00:15:35,036
+Só que a gente precisa fazer uma verificação, né?
+
+161
+00:15:37,476 --> 00:15:41,616
+Se esse produto que a gente está buscando
+
+162
+00:15:46,016 --> 00:15:50,579
+ele é, existir, então por que que já
+
+163
+00:15:50,580 --> 00:15:53,699
+está sendo feita a comparação, né? Tá vendo?
+
+164
+00:15:54,199 --> 00:15:56,419
+Aqui já vai dar um resultado verdadeiro ou falso.
+
+165
+00:15:56,799 --> 00:15:59,519
+Se achou o produto, vai entrar nesse if aqui,
+
+166
+00:15:59,679 --> 00:16:01,879
+que vai constar como verdadeiro.
+
+167
+00:16:02,561 --> 00:16:08,321
+e ele já vai exibir has.json
+
+168
+00:16:08,322 --> 00:16:16,441
+abre parênteses produto certo?
+
+169
+00:16:16,961 --> 00:16:24,754
+e depois um else res.status
+
+170
+00:16:27,534 --> 00:16:33,674
+abre parênteses 404.json
+
+171
+00:16:37,287 --> 00:16:39,747
+Abre parêntese,
+
+172
+00:16:41,187 --> 00:16:43,767
+abre chaves,
+
+173
+00:16:45,867 --> 00:16:49,107
+erro, dois pontos, aspas.
+
+174
+00:16:52,949 --> 00:16:55,169
+Produto não encontrado.
+
+175
+00:17:01,169 --> 00:17:03,489
+Até agora, dúvida, algo de novo,
+
+176
+00:17:03,769 --> 00:17:05,989
+algo que você não achou, algo que você não entendeu?
+
+177
+00:17:06,782 --> 00:17:11,022
+Tranquilo, né? Tudo isso a gente já viu aqui.
+
+178
+00:17:17,202 --> 00:17:19,262
+Terminou? Pronto. Então,
+
+179
+00:17:19,382 --> 00:17:21,442
+essa é a nossa rota GET com o IDE.
+
+180
+00:17:22,362 --> 00:17:25,055
+Logo após. Após, a gente vai fazer uma rota post,
+
+181
+00:17:25,295 --> 00:17:27,695
+que é a nossa rota de update, certo?
+
+182
+00:17:28,235 --> 00:17:34,355
+Então, app.post, abre
+
+183
+00:17:34,356 --> 00:17:37,155
+parênteses, aspas, produtos,
+
+184
+00:17:37,495 --> 00:17:38,415
+barra produtos, né?
+
+185
+00:17:43,887 --> 00:17:45,127
+//produtos //
+
+186
+00:17:50,407 --> 00:17:53,947
+essa post não vai ter uma rota especifica não é só //produtos,
+
+187
+00:17:54,447 --> 00:17:56,060
+virgula r Que receio!
+
+188
+00:18:15,433 --> 00:18:20,533
+Aí agora a gente vai colocar const nome
+
+189
+00:18:20,534 --> 00:18:22,933
+vírgula preço né,
+
+190
+00:18:23,213 --> 00:18:28,565
+sem cedilha, recebe RecBody,
+
+191
+00:18:28,865 --> 00:18:31,925
+esse vai ser o corpo da nossa requisição.
+
+192
+00:18:32,105 --> 00:18:35,205
+Então, quando a gente for fazer uma requisição do tipo post,
+
+193
+00:18:35,505 --> 00:18:40,125
+a gente vai ter que sempre dar o nome
+
+194
+00:18:40,126 --> 00:18:42,345
+e o preço desse produto que a gente vai cadastrar,
+
+195
+00:18:42,605 --> 00:18:42,765
+ok?
+
+196
+00:18:46,828 --> 00:18:48,908
+Pronto? Beleza.
+
+197
+00:18:49,248 --> 00:18:54,468
+Aí embaixo a gente vai colocar uma verificação.
+
+198
+00:18:54,888 --> 00:18:57,168
+Se não tiver nome e nem,
+
+199
+00:18:57,169 --> 00:19:02,011
+ou não tiver o, O preço,
+
+200
+00:19:02,411 --> 00:19:08,011
+o que que vai acontecer? Tem como a gente fazer o
+
+201
+00:19:08,012 --> 00:19:11,171
+cadastro de um produto sem o nome ou sem o,
+
+202
+00:19:11,172 --> 00:19:13,211
+Então vai dar erro, certo? Então,
+
+203
+00:19:13,531 --> 00:19:16,154
+você vai colocar. Nome,
+
+204
+00:19:18,834 --> 00:19:21,994
+pipe, você sabe como é que dá o pipe?
+
+205
+00:19:22,534 --> 00:19:25,074
+Pronto. Exclamação,
+
+206
+00:19:25,334 --> 00:19:27,254
+preço. Certo?
+
+207
+00:19:32,156 --> 00:19:39,956
+Então, a gente vai colocar aqui, return res.status,
+
+208
+00:19:42,796 --> 00:19:47,036
+abre parênteses.
+
+209
+00:19:57,799 --> 00:19:59,839
+Parênteses, chaves.
+
+210
+00:20:05,262 --> 00:20:07,322
+Erro, dois pontos,
+
+211
+00:20:08,622 --> 00:20:14,102
+aspas, nome e preço são
+
+212
+00:20:14,103 --> 00:20:18,862
+informações obrigatórias.
+
+213
+00:20:34,204 --> 00:20:38,107
+Obrigado. Certo?
+
+214
+00:20:38,747 --> 00:20:43,287
+Beleza! Agora a gente vem no ELSE Deixa eu ver se tem o ELSE
+
+215
+00:20:44,847 --> 00:20:50,207
+Não Já é direto Aí a gente vai criar const novo
+
+216
+00:20:50,787 --> 00:20:55,590
+produto O produto recebe
+
+217
+00:20:55,591 --> 00:21:00,210
+o
+
+218
+00:21:00,211 --> 00:21:03,530
+id atual mais mais,
+
+219
+00:21:06,410 --> 00:21:07,350
+pera, deixa eu ver aqui.
+
+220
+00:21:12,332 --> 00:21:16,772
+É id dois pontos,
+
+221
+00:21:17,032 --> 00:21:21,552
+id atual, nome dois pontos.
+
+222
+00:21:27,515 --> 00:21:30,235
+Aliás, nome,
+
+223
+00:21:30,615 --> 00:21:31,715
+vírgula,
+
+224
+00:21:36,115 --> 00:21:39,135
+preço, dois pontos.
+
+225
+00:21:40,578 --> 00:21:42,778
+Número, abre parênteses, preço.
+
+226
+00:21:56,660 --> 00:21:59,220
+Aí aqui embaixo a gente vai colocar produtos,
+
+227
+00:21:59,280 --> 00:22:01,820
+que é a nossa lista.push,
+
+228
+00:22:01,920 --> 00:22:04,100
+que é pra empurrar pra dentro da lista.
+
+229
+00:22:05,520 --> 00:22:07,900
+E a gente vai empurrar pra quem pra dentro da lista?
+
+230
+00:22:08,100 --> 00:22:11,320
+O novo produto. Ok?
+
+231
+00:22:13,833 --> 00:22:20,253
+E aí, para concluir, res.status.json
+
+232
+00:22:20,254 --> 00:22:25,073
+201.json
+
+233
+00:22:29,526 --> 00:22:31,486
+novo produto.
+
+234
+00:22:43,628 --> 00:22:46,688
+Foi? Ótimo!
+
+235
+00:22:47,288 --> 00:22:51,248
+Agora, a gente vai fazer o PUT.
+
+236
+00:22:51,728 --> 00:22:56,448
+Aliás, eu troquei, né? POST é pra qual do
+
+237
+00:22:56,449 --> 00:23:01,201
+CRUD? Não,
+
+238
+00:23:01,401 --> 00:23:03,841
+post é para o, ou é o update?
+
+239
+00:23:06,481 --> 00:23:09,221
+Não, post é criar. É o create.
+
+240
+00:23:11,321 --> 00:23:14,701
+É o create. E o,
+
+241
+00:23:14,702 --> 00:23:17,054
+but que é o, É isso mesmo,
+
+242
+00:23:17,314 --> 00:23:19,354
+troquei as coisas. Pronto,
+
+243
+00:23:19,474 --> 00:23:22,214
+então a gente fez aqui o de criar, né? Pra criar um produto precisa
+
+244
+00:23:22,215 --> 00:23:24,534
+de nome e de preço. Normal, certo?
+
+245
+00:23:25,154 --> 00:23:28,114
+Agora a gente vai fazer a rota de atualizar esses produtos,
+
+246
+00:23:28,174 --> 00:23:30,714
+né? Então, app.put
+
+247
+00:23:38,177 --> 00:23:40,757
+E aí eu te pergunto,
+
+248
+00:23:41,297 --> 00:23:44,957
+pra gente atualizar um produto, a gente precisa do que?
+
+249
+00:23:47,799 --> 00:23:50,279
+Exatamente, porque senão eu vou atualizar todo mundo,
+
+250
+00:23:50,379 --> 00:23:53,179
+né? Eu preciso saber qual é o produto que eu preciso atualizar,
+
+251
+00:23:53,499 --> 00:23:55,699
+certo? Então,
+
+252
+00:23:55,839 --> 00:23:59,479
+a gente vai colocar o barra-produtos aqui,
+
+253
+00:24:00,479 --> 00:24:06,892
+barra-2.id, vírgula
+
+254
+00:24:06,893 --> 00:24:09,892
+req abre parênteses req reza aquela miniculadainha
+
+255
+00:24:24,795 --> 00:24:26,195
+Certo?
+
+256
+00:24:35,927 --> 00:24:40,627
+Então, a gente já vai copiar essa requisição aqui,
+
+257
+00:24:40,727 --> 00:24:43,067
+o corpo da requisição. Então, você pode colocar aqui,
+
+258
+00:24:43,787 --> 00:24:46,707
+const nome preço igual a rec.body.
+
+259
+00:24:53,330 --> 00:24:56,330
+Aí agora a gente vai criar também um outro negócio aqui dentro,
+
+260
+00:24:57,190 --> 00:25:03,970
+que é const index recebe
+
+261
+00:25:07,430 --> 00:25:11,533
+produtos .find index,
+
+262
+00:25:11,813 --> 00:25:14,093
+abre parênteses e
+
+263
+00:25:21,513 --> 00:25:25,915
+aí a gente vai pegar a ONU. Deixa eu ver onde é que foi
+
+264
+00:25:25,916 --> 00:25:29,235
+que a gente usou esse carinha, a gente pode reaproveitar esse aqui,
+
+265
+00:25:29,315 --> 00:25:31,995
+ó, do find, tá vendo? A mesma coisa,
+
+266
+00:25:32,095 --> 00:25:34,955
+esses parênteses aqui, ó. Get,
+
+267
+00:25:35,295 --> 00:25:36,015
+lá no get.
+
+268
+00:25:40,878 --> 00:25:43,058
+P, I, D, REC, PARAM, C,
+
+269
+00:25:43,178 --> 00:25:43,918
+R, PRONTO.
+
+270
+00:26:01,311 --> 00:26:04,151
+Pronto? Ok. Agora,
+
+271
+00:26:04,551 --> 00:26:08,911
+a gente vai perguntar o seguinte. É,
+
+272
+00:26:10,771 --> 00:26:16,153
+If, índex
+
+273
+00:26:16,154 --> 00:26:18,533
+igual, igual, igual a menos um,
+
+274
+00:26:19,713 --> 00:26:22,053
+quer dizer o que?
+
+275
+00:26:22,153 --> 00:26:24,233
+Que ele não achou o produto que vai ser atualizado,
+
+276
+00:26:24,313 --> 00:26:26,753
+certo? Então, novamente,
+
+277
+00:26:27,153 --> 00:26:31,886
+podemos aproveitar. Esse
+
+278
+00:26:31,887 --> 00:26:35,186
+cara aqui, ó, lá do Gantt.
+
+279
+00:26:39,926 --> 00:26:43,186
+Qual a função desse índex aí? Esse índex,
+
+280
+00:26:43,246 --> 00:26:47,029
+ele vai procurar o positivo. produto que tem o mesmo índice que você tá
+
+281
+00:26:47,030 --> 00:26:49,749
+dando, ou seja, o mesmo ID, certo?
+
+282
+00:26:52,349 --> 00:26:54,789
+Tipo esse 404 erro é,
+
+283
+00:26:54,790 --> 00:26:57,909
+pronto. E aí, caso contrário,
+
+284
+00:26:58,029 --> 00:27:00,289
+nem precisa de ELSI, porque quando dá certo,
+
+285
+00:27:00,311 --> 00:27:04,951
+erro já entra aqui dentro, e aí vai faltar só um
+
+286
+00:27:04,952 --> 00:27:10,651
+return aqui ó, coloca
+
+287
+00:27:10,652 --> 00:27:15,371
+um return aqui se
+
+288
+00:27:15,372 --> 00:27:18,114
+ele cumprir essa condição aqui Se você não tiver achado o índice,
+
+289
+00:27:18,274 --> 00:27:20,514
+ele já vai retornar e sair daqui,
+
+290
+00:27:20,854 --> 00:27:24,074
+certo? Se não, ele nem entra nesse if.
+
+291
+00:27:24,774 --> 00:27:27,494
+E aí o que a gente vai fazer? Produtos,
+
+292
+00:27:28,774 --> 00:27:33,917
+a lista, abre colchetes na posição que Na posição índex,
+
+293
+00:27:34,097 --> 00:27:38,777
+na posição que está o índex, eu vou pegar
+
+294
+00:27:38,778 --> 00:27:43,037
+todos os produtos
+
+295
+00:27:54,730 --> 00:27:59,410
+E vou atualizar. Vou
+
+296
+00:27:59,411 --> 00:28:02,750
+ver aqui. Nome e preço.
+
+297
+00:28:19,092 --> 00:28:20,432
+Número 3,
+
+298
+00:28:30,345 --> 00:28:31,745
+Productos.
+
+299
+00:28:37,958 --> 00:28:40,738
+Index. Ou seja,
+
+300
+00:28:40,878 --> 00:28:46,158
+o que aconteceu? A gente foi lá na nossa lista de produtos e
+
+301
+00:28:46,159 --> 00:28:50,158
+colocou o índice. O índice é o ID que a gente enviou pra ele.
+
+302
+00:28:50,338 --> 00:28:54,930
+Então, se eu dei o ID, Ele é o índice.
+
+303
+00:28:55,030 --> 00:28:57,950
+O índice é o indicador, né? Vou chamar de indicador.
+
+304
+00:29:00,350 --> 00:29:03,070
+Então, os produtos, na lista de produtos,
+
+305
+00:29:03,210 --> 00:29:05,630
+eu vou na posição que o meu indicador tá falando.
+
+306
+00:29:07,070 --> 00:29:09,073
+Vou chamar todos os outros produtos. produtos,
+
+307
+00:29:09,193 --> 00:29:11,313
+daqui é só pra dizer, ah, vai lá na lista,
+
+308
+00:29:11,533 --> 00:29:16,233
+ignora os outros produtos e procura o produto
+
+309
+00:29:16,234 --> 00:29:18,593
+que tá como indicador, ou seja,
+
+310
+00:29:18,893 --> 00:29:22,693
+supondo que o meu índex seja 3, vou pegar o produtos,
+
+311
+00:29:23,053 --> 00:29:27,576
+o que tá na posição 3. Vou mudar o nome dele e vou mudar
+
+312
+00:29:27,577 --> 00:29:32,516
+o preço, certo? Esse nome e preço são esses mesmos
+
+313
+00:29:32,517 --> 00:29:35,556
+nomes e preços que a gente mandou no corpo da requisição,
+
+314
+00:29:35,796 --> 00:29:38,776
+certo? Beleza.
+
+315
+00:29:39,236 --> 00:29:41,378
+Depois disso, Perfeito,
+
+316
+00:29:42,038 --> 00:29:44,678
+agora é só a rota delete, ok?
+
+317
+00:29:44,998 --> 00:29:47,758
+Olha aí, vê se já instalou o seu front engine,
+
+318
+00:29:48,638 --> 00:29:51,358
+tá pronto. Também, né, se não instalasse,
+
+319
+00:29:51,458 --> 00:29:53,938
+ia ser complicado.
+
+320
+00:30:01,441 --> 00:30:02,301
+Ai, meu Deus do Céu! Ai, meu
+
+321
+00:30:43,726 --> 00:30:44,266
+Fui.
+
+322
+00:30:57,599 --> 00:31:00,919
+Estou estancado aqui no meu. Foi meio chato.
+
+323
+00:31:00,952 --> 00:31:03,152
+um negócio pra tirar da pasta. Eu acho que eu mexi,
+
+324
+00:31:03,272 --> 00:31:05,272
+mas não tem problema não. Então,
+
+325
+00:31:15,242 --> 00:31:19,324
+zero segredos. Vamos continuar.
+
+326
+00:31:19,824 --> 00:31:22,604
+Agora você vai fazer um att.delete,
+
+327
+00:31:23,284 --> 00:31:23,704
+certo?
+
+328
+00:31:45,977 --> 00:31:50,000
+Aí dentro desse app.delete Você vai colocar assim,
+
+329
+00:31:51,160 --> 00:31:55,000
+abre parênteses, aspas,
+
+330
+00:31:58,460 --> 00:32:01,040
+embaixo,
+
+331
+00:32:02,280 --> 00:32:04,500
+fora do app,
+
+332
+00:32:04,780 --> 00:32:07,403
+olha onde eu Onde é que abre o, Aliás,
+
+333
+00:32:07,563 --> 00:32:12,123
+fora do, Como é
+
+334
+00:32:12,124 --> 00:32:14,503
+que fala? Pera aí. Aqui.
+
+335
+00:32:14,843 --> 00:32:18,663
+Tá vendo? Fora do put. Então,
+
+336
+00:32:18,843 --> 00:32:22,005
+app.com.br Delete,
+
+337
+00:32:30,225 --> 00:32:32,385
+abro parênteses.
+
+338
+00:32:41,668 --> 00:32:44,128
+Abra parênteses, aspas,
+
+339
+00:32:44,308 --> 00:32:49,028
+barra produtos, barra dois pontos id,
+
+340
+00:32:49,328 --> 00:32:52,788
+porque pra deletar a gente também tem que saber qual id do produto que
+
+341
+00:32:52,789 --> 00:32:56,731
+a gente vai deletar. A gente vai colocar também de novo REC,
+
+342
+00:32:57,691 --> 00:33:00,771
+IRS, SETA,
+
+343
+00:33:01,131 --> 00:33:02,931
+CHAVES.
+
+344
+00:33:10,513 --> 00:33:11,413
+Não, é que eu não sei não.
+
+345
+00:34:11,541 --> 00:34:16,324
+Peraí, Pronto?
+
+346
+00:34:17,124 --> 00:34:19,884
+Beleza. Aí dentro desse delete,
+
+347
+00:34:20,084 --> 00:34:21,064
+o que a gente vai fazer?
+
+348
+00:34:26,604 --> 00:34:29,024
+Produto, produtos no caso, né, a lista,
+
+349
+00:34:29,284 --> 00:34:39,127
+produtos. Produtos igual produtos.filter,
+
+350
+00:34:40,327 --> 00:34:46,009
+abre parênteses. E
+
+351
+00:34:46,010 --> 00:34:48,569
+aí a gente vai pegar de novo essa comparação aqui,
+
+352
+00:34:48,709 --> 00:34:49,529
+t-i-d, tá vendo?
+
+353
+00:34:57,659 --> 00:35:00,539
+Só que agora a gente vai fazer isso aqui,
+
+354
+00:35:00,739 --> 00:35:03,552
+colocar aquele aqui. diferente, ok?
+
+355
+00:35:04,692 --> 00:35:09,332
+Então, esse aqui tem que ser diferente
+
+356
+00:35:09,333 --> 00:35:16,632
+desse aqui. E aí a
+
+357
+00:35:16,633 --> 00:35:18,815
+gente vai colocar .vírgula,
+
+358
+00:35:19,815 --> 00:35:22,655
+res.status,
+
+359
+00:35:25,575 --> 00:35:28,195
+abre parênteses, duzentos e quatro,
+
+360
+00:35:29,355 --> 00:35:33,075
+ponto json, abre parênteses,
+
+361
+00:35:38,527 --> 00:35:41,047
+Aliás, não é nem português, é .cent,
+
+362
+00:35:41,267 --> 00:35:41,867
+já era.
+
+363
+00:35:49,207 --> 00:35:54,250
+.cent Perfeito,
+
+364
+00:35:55,950 --> 00:35:58,150
+ponto e vírgula, foi.
+
+365
+00:36:01,250 --> 00:36:06,023
+Ok? Agora a gente vai fazer o Pessoal,
+
+366
+00:36:06,163 --> 00:36:10,603
+eu apertei ponto listing, certo? Deixa eu só procurar em outro código aqui que
+
+367
+00:36:10,604 --> 00:36:11,323
+eu tô sem lugar.
+
+368
+00:36:16,443 --> 00:36:18,543
+Ó, a gente vai ver aqui,
+
+369
+00:36:18,763 --> 00:36:23,336
+em cima de tudo, Vai lá em cima
+
+370
+00:36:23,337 --> 00:36:28,116
+de tudo e cria const porta recebe
+
+371
+00:36:28,117 --> 00:36:31,396
+3000,
+
+372
+00:36:31,996 --> 00:36:36,596
+certo?
+
+373
+00:36:43,688 --> 00:36:46,688
+Depois, a gente vai,
+
+374
+00:36:49,848 --> 00:36:53,068
+Criou a porta, agora eu tive só lembrar.
+
+375
+00:36:53,228 --> 00:36:54,891
+Coloca aí a PB. https://tinyurl.com.br
+
+376
+00:37:17,974 --> 00:37:20,874
+Cadê o server.js?
+
+377
+00:37:21,854 --> 00:37:23,974
+Achei. Pronto.
+
+378
+00:37:24,754 --> 00:37:27,516
+Aqui embaixo. app.listen,
+
+379
+00:37:27,636 --> 00:37:29,236
+abre parênteses, porta,
+
+380
+00:37:41,436 --> 00:37:45,539
+porta. Abre parêntese, setinha.
+
+381
+00:38:49,950 --> 00:38:50,550
+Põe aí!
+
+382
+00:39:10,092 --> 00:39:14,792
+Ok, agora, meu front-end ainda está instalado de novo,
+
+383
+00:39:14,872 --> 00:39:17,832
+porque eu fiz cagada nele, mas a gente vai fazer o seguinte.
+
+384
+00:39:17,833 --> 00:39:21,335
+Tchau. Dentro do seu aí,
+
+385
+00:39:21,595 --> 00:39:23,855
+provavelmente, tem um index.css,
+
+386
+00:39:23,975 --> 00:39:27,215
+não tem? Aham.
+
+387
+00:39:27,995 --> 00:39:30,115
+Dá uma olhada aí. Tem algum arquivo css?
+
+388
+00:39:35,458 --> 00:39:39,518
+Tá, deixa eu ver. Sim,
+
+389
+00:39:39,598 --> 00:39:39,818
+vou levar.
+
+390
+00:39:43,878 --> 00:39:46,578
+Tá, você vai colocar, Deixa eu ver onde é que ele pede pra alincar.
+
+391
+00:39:52,200 --> 00:39:56,400
+Esse aqui é o app CSS, então eu vou te passar o CSS,
+
+392
+00:39:57,280 --> 00:40:00,120
+ficar tudo organizadinho,
+
+393
+00:40:00,600 --> 00:40:04,000
+que é assim, eu, Daniel, particularmente,
+
+394
+00:40:04,600 --> 00:40:09,663
+eu não dou tanta importância, porque ele é mais uma coisa criativa
+
+395
+00:40:09,664 --> 00:40:13,203
+do que funcional, né? Então, tipo assim, se você quer exercitar CSS,
+
+396
+00:40:13,523 --> 00:40:17,603
+criatividade e tudo mais, é interessante você,
+
+397
+00:40:18,683 --> 00:40:21,723
+em casa, criar suas próprias páginas e ir criando seus designs.
+
+398
+00:40:21,843 --> 00:40:26,426
+Mas te falo sobre Então é o seguinte, a maioria dos desenvolvedores hoje ou
+
+399
+00:40:26,427 --> 00:40:30,226
+já tem CSS prontos porque é tipo a identidade visual da empresa,
+
+400
+00:40:30,366 --> 00:40:34,326
+então ninguém vai sair criando do nada, ou já tem pronto ou pede ajuda
+
+401
+00:40:34,327 --> 00:40:36,706
+pra alguma IA ajudar a criar,
+
+402
+00:40:37,026 --> 00:40:39,749
+certo? É o de menos para a gente aqui,
+
+403
+00:40:40,149 --> 00:40:42,229
+ok? Então,
+
+404
+00:40:42,230 --> 00:40:45,629
+vou te mandar o app CSS.
+
+405
+00:40:46,129 --> 00:40:47,889
+Deixa eu ver se o seu computador aparece aqui.
+
+406
+00:40:56,021 --> 00:41:00,621
+Vamos no Don't Page, que eu acho que os computadores estão sendo
+
+407
+00:41:00,622 --> 00:41:04,061
+configurados. Pesquisa Don't Page.
+
+408
+00:41:21,824 --> 00:41:24,524
+Aqui, com o Shift F,
+
+409
+00:41:24,904 --> 00:41:29,477
+formatar direitinho. Aí você vai pesquisar o
+
+410
+00:41:29,478 --> 00:41:31,657
+seguinte, é,
+
+411
+00:41:31,658 --> 00:41:37,457
+Don't pad, barra, Jogue
+
+412
+00:41:37,458 --> 00:41:42,597
+aí pra gente ver. Pronto.
+
+413
+00:41:42,659 --> 00:41:47,219
+Aí a gente precisa agora criar o digníssimo
+
+414
+00:41:47,220 --> 00:41:49,299
+do, Ó,
+
+415
+00:41:49,399 --> 00:41:53,499
+uma dica também. Gemini é péssimo pra CSS.
+
+416
+00:41:54,539 --> 00:41:56,939
+É horrível, horrível, horrível. Foi fazer, Acho que foi,
+
+417
+00:41:56,940 --> 00:42:00,362
+Não, foi com vocês não. É, eu fui fazer uma página,
+
+418
+00:42:00,782 --> 00:42:03,502
+pedi pra ele, ah, faça uma página aí com ciano,
+
+419
+00:42:03,622 --> 00:42:06,842
+médio, que é as cores da escola, né, e laranja.
+
+420
+00:42:07,482 --> 00:42:09,622
+Um negócio tosco, feio, feio,
+
+421
+00:42:09,702 --> 00:42:12,522
+feio, feio de dar dó. Mas foi que batei em volta.
+
+422
+00:42:14,745 --> 00:42:18,505
+Aí é bom você usar outros aí,
+
+423
+00:42:18,605 --> 00:42:20,025
+certo? Baixo, amém.
+
+424
+00:42:30,837 --> 00:42:34,457
+Agora, você vai vir aqui nesse app.js,
+
+425
+00:42:34,897 --> 00:42:35,297
+ok?
+
+426
+00:42:39,377 --> 00:42:43,277
+Nesse app.js aqui,
+
+427
+00:42:46,830 --> 00:42:51,390
+A gente vai fazer o seguinte, tem alguns importes
+
+428
+00:42:51,391 --> 00:42:57,090
+ali em cima, né, já tem, Tira
+
+429
+00:42:57,091 --> 00:43:00,610
+esse import logo e coloca import.
